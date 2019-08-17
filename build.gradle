@@ -1,4 +1,13 @@
-
+subprojects {
+    project.configurations.all {
+        resolutionStrategy.eachDependency { details ->
+            if (details.requested.group == 'com.android.support'
+                    && !details.requested.name.contains('multidex') ) {
+                details.useVersion '25.4.0'//这个版本号设置为你想要的版本
+            }
+        }
+    }
+}
 buildscript {
     repositories {
         jcenter()
