@@ -72,12 +72,12 @@ android {
         normal {
             dimension "default"
             // add app_name int string.xml
-            resValue "string", "app_name", "OpenHub"
+            resValue "string", "app_name", "Hido"
         }
         fullName {
             dimension "default"
             // add app_name int string.xml
-            resValue "string", "app_name", "OpenHub for GitHub"
+            resValue "string", "app_name", "Hido互联"
         }
     }
 
