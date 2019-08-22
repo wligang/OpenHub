@@ -2,7 +2,7 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.thirtydegreesray.openhub" android:installLocation="auto">
+    package="com.wlgdo.hido" android:installLocation="auto">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -65,8 +65,8 @@
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
                 <data
-                    android:host="login"
-                    android:scheme="openhub"/>
+                    android:host="www.wlgdo.com"
+                    android:scheme="avatar"/>
             </intent-filter>
         </activity>
 
@@ -91,6 +91,7 @@
                 <data
                     android:host="www.github.com"
                     android:scheme="http"/>
+
             </intent-filter>
         </activity>
 
