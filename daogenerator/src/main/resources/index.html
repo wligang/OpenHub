@@ -27,18 +27,18 @@ function openApp() {
 
 	// 由安卓APP提供
 	var AppConfig = {
-		"host": "img.wlgdo.com",
 		"scheme": "avatar",
 		"package": "com.thirtydegreesray.openhub",
 		"action": "android.intent.action.VIEW",
 		"category": "android.intent.category.BROWSABLE",
-		"FAILBACK_ANDROID": "http://www.wlgdo.com/oauth",
-		"FAILBACK_IOS": "itms://itunes.apple.com/hk/app/bochk/avatar?mt=8"
+		"host": "www.wlgdo.com",
+		"FAILBACK_ANDROID": "https://wlgdo.com/oauth/app.html",
+		"FAILBACK_IOS": "itms://itunes.apple.com/hk/app/bochk/xxx?mt=8"
 	};
 
 	// android打开app 地址
 	function getAndroidSchema() {
-		var schemaStr = 'www.wlgdo.com/oauth?a=test';
+		var schemaStr = 'www.wlgdo.com/open?a=test';
 		if(ifChrome) {
 			schemaStr = "intent://" + schemaStr + "#Intent;" +
 				"scheme=" + AppConfig.scheme + ";" +
@@ -47,7 +47,7 @@ function openApp() {
 				"S.browser_fallback_url=" + encodeURIComponent(AppConfig.FAILBACK_ANDROID) + ";" +
 				"end";
 		} else {
-			schemaStr = "xxx://www.wlgdo.com/oauth";
+			schemaStr = "xxx://www.xxx.com/open";
 		}
 		return schemaStr;
 	}
