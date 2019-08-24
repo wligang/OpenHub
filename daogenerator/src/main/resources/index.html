@@ -9,7 +9,10 @@
 <body>
 <a href="javascript:openApp();" id="app">打开DEMO</a><br>
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript">function openApp() {
+<script type="text/javascript">
+	openApp();
+
+	function openApp() {
 	// 判断浏览器
 
 	var Navigator = navigator.userAgent;
@@ -59,15 +62,15 @@
 		//return;
 		var s = getAndroidSchema()+"?"+queryParam;
 		if(ifChrome) { // chrome会自动识别S.browser_fallback_url如果没有安装则打开下载链接地址
-			alert('chrome#'+s);
+			//alert('chrome#'+s);
 			window.location.href = s;
 
 		} else if(ifWeixin) { // 微信无法打开APP，跳转到下载页面
-			alert('wechat#'+s);
+			//alert('wechat#'+s);
 			window.location.href = AppConfig.FAILBACK_ANDROID;;
 
 		} else { // 其他浏览器3秒内没打开则跳转到下载链接
-			alert('other#'+s);
+			//alert('other#'+s);
 			window.location.href = s;
 			var start = Date.now();
 			// 如果页面在后台运行返回，如果超过3秒没有打开APP，则没有安装，跳转到应用市场
