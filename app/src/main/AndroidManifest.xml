@@ -65,7 +65,7 @@
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
                 <data
-                    android:host="www.wlgdo.com"
+                    android:host="img.wlgdo.com"
                     android:scheme="avatar"/>
             </intent-filter>
         </activity>
@@ -91,7 +91,9 @@
                 <data
                     android:host="www.github.com"
                     android:scheme="http"/>
-
+                <data
+                    android:host="img.wlgdo.com"
+                    android:scheme="avatar"/>
             </intent-filter>
         </activity>
 
