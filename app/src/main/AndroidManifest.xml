@@ -91,9 +91,6 @@
                 <data
                     android:host="www.github.com"
                     android:scheme="http"/>
-                <data
-                    android:host="img.wlgdo.com"
-                    android:scheme="avatar"/>
             </intent-filter>
         </activity>
 
